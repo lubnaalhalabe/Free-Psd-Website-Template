@@ -1,0 +1,125 @@
+.footer{
+    background-color: #e5e3e3;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    .div1 , .div2 , .div3 {
+        float: $float-left;
+        margin-top: 30px;
+    }
+    .div1{
+     @media #{$minSmall} {
+        width: 100%; 
+     }
+     @media #{$minMedium} {
+        width: 50%; 
+     }
+
+     .img-box{
+        overflow: hidden;
+     img{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @media #{$minSmall} {
+            float: $float-left; 
+            margin-top: 30px;
+         }
+        width: 150px;
+        height: 150px;
+        
+     }
+     .text{
+        @media #{$minSmall} {
+        float: $float-left; 
+        width: calc(100% - 175px);
+        margin-top: 40px;
+        margin-right: 10px;
+        margin-left: 15px;
+         }
+        
+     h4{
+      color: $redcolor;
+     }
+     p{
+      color: #777;
+      margin-top: 20px;
+      line-height: 1.9;
+     }
+
+     }
+    }
+}
+    .div2{
+    @media #{$minSmall} {
+        width: 50%; 
+     }
+     @media #{$minMedium} {
+        width: 25%; 
+     }
+    ul{
+        color: #777;
+        margin-top: 40px;
+        line-height: 1.9;
+        span{
+            color: $redcolor;
+        }
+    }
+    h4{
+        color: #777;
+        font-weight: bold;
+        margin-bottom:0;
+
+    }
+    p{
+        color: #777;
+        margin-top: 5px;
+
+    }
+    }
+    .div3{
+    @media #{$minSmall} {
+        width: 50%; 
+     }
+     @media #{$minMedium} {
+        width: 25%; 
+     }
+    input:first-child{
+        margin-top: 40px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        border: 1px solid  #777; 
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        width: 100%;
+
+    }
+    textarea{
+        height: 150px;
+    }
+    }
+    .footer-title{
+        color: #777;
+        font-weight: normal;
+    }
+    .copy{
+        padding: 15px 0px;
+        border-top: 2px solid #c5c5c5;
+        margin-top: 40px;
+        overflow: hidden;
+       .copyr-text{
+          float: $float-left;
+          width: 50%;
+          color: #777;
+        }
+        .text{
+            float: $float-left;
+            width: 50%;
+            color: #777;
+            text-align: $text-right;
+        }
+    
+    }
+}

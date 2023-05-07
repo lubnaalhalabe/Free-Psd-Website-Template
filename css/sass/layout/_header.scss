@@ -1,0 +1,70 @@
+.header{
+    padding: 20px 0;
+    overflow:hidden;
+    border-bottom: 1px solid #ccc;
+    .logo {
+        position: relative;
+        @media #{$minSmall} {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$minMedium} {
+            width: 30%;
+            float: $float-left;
+            text-align: $text-left;
+        }
+
+       h1{
+         margin-bottom: 0;
+         margin-top: 10px;
+
+       }
+    }
+    .navbar{
+        background-color: $redcolor;
+        border-radius: 15px;
+        overflow: hidden;
+        @media #{$minSmall} {
+            width: 100%;
+            float: none;
+            margin-top: 40px;
+            display: block !important;
+        }
+        @media #{$minMedium} {
+            width: 70%;
+            float: $float-left;
+            margin-top: 1rem;
+        }
+        @media #{$maxmobail} {
+            display: none;
+            border-radius: 0;
+            
+          }
+
+     li{
+        width: 20%;
+        float: $float-left;
+        font-size: 18px;
+        text-align: center;
+        @media #{$maxmobail} {
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: left;
+          }
+       
+        a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 20px 10px;
+            &:hover{
+                color:$greycolor;
+            }
+           
+        }
+
+    }
+    }
+}

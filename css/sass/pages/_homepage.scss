@@ -1,0 +1,134 @@
+/*start slider*/
+.slider{
+    margin-top: 30px;
+    
+    blockquote{
+        font: {
+            style: italic;
+            family: Tahoma;
+            weight: bold;
+        }
+        font-size: 20px;
+        line-height: 1.7;
+        text-align: center;
+        color: rgb(151, 142, 142);
+        width: 90%;
+        margin: 30px auto;
+
+}
+img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+    margin: 50px auto;
+}
+ li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: $greycolor;
+    border: 1px solid $greycolor;
+    border-radius: 50%;
+    &.active ,
+    &:hover {
+        background-color: #fff;
+        border: 1px solid #3333;
+    }
+}
+}
+/*end silder*/
+/*start services*/
+.services {
+    .services-box{
+       
+        @media #{$minMedium} {
+            float: left;
+            width: (100% / 3);
+            &:not(:last-of-type){
+                padding-right: 20px;
+            }   
+        }
+        @media #{$maxmobail} {
+            i{
+            display: block;
+            margin-bottom: 15px;
+            }
+        }
+       .services-title{
+        color: #666;
+        i{
+         font-size: 30px ;
+         position: relative;
+         top: 4px;
+        }
+        }
+       
+    .services-desc{
+         color: #777; 
+        }
+        a{
+          color:$redcolor;
+        }
+    }
+}
+
+/*end services*/
+/*start players*/
+.players {
+    .players-box{
+        @media #{$minSmall} {
+            float: $float-left;
+            width: (100% / 2);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        @media #{$minMedium} {
+            width: (100% / 3);
+            text-align: $text-left;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+        @media #{$minLarge} {
+            width: (100% / 5);
+
+        }
+        img{ width: 300px; height: 200px; max-width: 100%;}
+       .players-title{
+        color: #666;
+        font-weight: normal;
+        span{
+            font-weight: bold;
+        }
+        }
+       
+    .players-desc{
+         color: #777; 
+        }
+        a{
+          color:$redcolor;
+        }
+    }
+}
+
+/*end playres*/
+/*start lorem*/
+.lorem {
+    .lorem-box{
+            @media #{$minSmall} {
+                float: left;
+                width: (100% / 3);
+                &:not(:last-of-type){
+                padding-right: 30px;}
+             }
+            @media #{$maxmobail} {
+            width: 100%;
+            float: none;
+            margin-bottom: 20px;
+            display: block;
+            }
+    }
+
+    img{ width: 400px; height: 200px; max-width: 100%;}
+}
+/*end lorem*/
